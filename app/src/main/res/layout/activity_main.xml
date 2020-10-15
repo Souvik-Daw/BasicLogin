@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter user name"
+        android:textColorHint="#490C18"
+        app:hintTextColor="@color/colorPrimaryDark"
+        android:padding="4dp"
+        app:startIconDrawable="@drawable/ic_circle_black_24dp"
+        app:startIconTint="#D4A80A">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputName"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter passward"
+        app:startIconDrawable="@drawable/ic_vpn_key_black_24dp"
+        app:hintTextColor="@color/colorPrimaryDark"
+        android:textColorHint="#490C18"
+        android:padding="4dp"
+        app:startIconTint="#D4A80A">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/inputPwd"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnLogin"
+        android:textColor="#490C18"
+        android:textSize="20dp"
+        android:background="@drawable/login_shape"
+        android:padding="15dp"
+        />
+</LinearLayout>
